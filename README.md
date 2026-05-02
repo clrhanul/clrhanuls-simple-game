@@ -3,7 +3,9 @@ just made for healing my 2026 brainrot.
 
 so no license.
 
-# games
+## How to Play
+
+## games
 able |    Name    | version
 :---:|:----------:|:--------
 ✅  |     2048    | v1.0b
