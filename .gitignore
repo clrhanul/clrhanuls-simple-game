@@ -3,4 +3,8 @@ build/*
 dist/*
 spec/*
 
+test.*
+*.test
+test/*
+
 !.gitkeep

@@ -15,6 +15,19 @@ def right(ev):
     generate_num()
     re_render()
 
+def rotate90(array: list[list]):
+    line = array[0] + array[1] + array[2] + array[3]
+    dump = [0 for _ in range(16)]
+    pos = {
+         1:13,  2:9,   3:5,  4:1,
+         5:14,  6:10,  7:6,  8:2,
+         9:15, 10:11, 11:7, 12:3,
+        13:16, 14:12, 15:8, 16:4
+    }
+    for i in range(1, 17):
+        dump[pos[i]-1] = line[i-1]
+
+    return [[dump.pop(0) for _ in range(4)] for _ in range(4)]
 
 def re_render():
     global grid, dp_grid
